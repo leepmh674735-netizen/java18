@@ -9,7 +9,7 @@ contentType="text/html;
 <title>Insert title here</title>
 </head>
 <body>
-${six.noticeNum}
-${six.three}
+${fresh.boardNum}
+${fresh.boardContent}
 </body>
 </html>
