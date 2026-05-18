@@ -8,5 +8,10 @@
   SELECT * from "TB_NOTICE" 
   </select>
   
+    <select id="detail" resultType="NoticeDTO" parameterType="NoticeDTO"> 
+  SELECT * from "TB_NOTICE" WHERE "BOARD_NUM"=#{boardNum}
+  
+  </select>
+  
   
   </mapper>

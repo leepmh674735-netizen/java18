@@ -16,10 +16,21 @@ public class NoticeService {
 	
  public List<NoticeDTO> list() {
 	List<NoticeDTO> list = yellow.yellow();
-   
+  
 	 
 	
    return list;
+ }
+ public NoticeDTO detail(NoticeDTO noticeDTO) {
+	NoticeDTO dto =yellow.detail(noticeDTO);
+	
+	
+	return dto;
+	
+	
+	 
+	 
+	
  }
  
  

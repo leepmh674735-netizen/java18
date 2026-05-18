@@ -6,8 +6,18 @@ import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
 public interface NoticeMapper {
+	
+	public NoticeDTO detail(NoticeDTO notieDTO);
+	
+	
+
 	public List<NoticeDTO> yellow(); 
+	  
 	
 }
+
+
+	
+	
 
 

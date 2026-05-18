@@ -12,7 +12,8 @@ charset=UTF-8"
 </head>
 <body>
 <c:forEach items="${update}" var="delete"> 
-${delete.boardTitle}<br>
+<a href="/notice/detail?boardNum=${delete.boardNum}"
+>${delete.boardTitle}</a><br>
 
 </c:forEach>
 </body>
