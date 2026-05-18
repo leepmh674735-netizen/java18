@@ -1,7 +1,6 @@
 package com.winter.jisu.member;
 
-import java.awt.color.ProfileDataException;
-import java.time.LocalDate;
+import java.security.Timestamp;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -10,12 +9,10 @@ import lombok.Setter;
 @Setter
 public class MemberDTO {
 	
-	private String username;
+	private String id;
+	private String pw;
 	private String name;
-	private String password;
-	private String passwordCheck;
-	private String phone;
 	private String email;
-    private LocalDate birth;
-    private ProfileDataException profileDTO;
+	private Timestamp reData;
+	
 }
