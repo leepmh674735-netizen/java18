@@ -24,22 +24,11 @@ public class NoticeController {
 		return "notice/list";
 		
 	}
-    @GetMapping("/notice/detail")
-	public String detail(Model model) {
-   
-        return "notice/detail";
-		
-	}
-	public void update() {
-		
-	}
-	public void delete() {
-		
-	}
-	@GetMapping("notice/add")
-	public String add() {
-		
-		return "notice/add";
-	}
-	
+	@GetMapping("/notice/detail")
+    public void detail(NoticeDTO yellow, Model model) {
+    	NoticeDTO apple=jisu.detail(yellow);
+    	
+    	model.addAttribute("fresh", apple);
+     	
+    }
 }
