@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="com.winter.jisu.member.MemberMapper">
+  
+  <select id="login" resultType="MemberDTO">
+  SELECT * FROM "TB_MEMBER" 
+  </select>
+  
+  <select id="join" resultType="MemberDTO" parameterType="MemberDTO">
+  SELECT * FROM "TB_MEMBER" WHERE "MEMBER_ID"=#{memberId}
+  
+  </select>
+  
+  </mapper>

@@ -4,8 +4,13 @@
   "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
   <mapper namespace="com.winter.jisu.notice.NoticeMapper">
   
+  <insert id="happen" parameterType="NoticeDTO">
+  INSERT INTO "TB_NOTICE" 
+  		VALUES (DEFAULT,#{boardTitle}, #{boardWriter}, #{boardContents},now(), 0)
+  </insert>
+  
   <select id="yellow" resultType="NoticeDTO"> 
-  SELECT * from "TB_NOTICE" 
+  INSERT INTO "TB_NOTICE"  
   </select>
   
     <select id="detail" resultType="NoticeDTO" parameterType="NoticeDTO"> 

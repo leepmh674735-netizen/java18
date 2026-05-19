@@ -26,12 +26,15 @@ public class NoticeService {
 	
 	
 	return dto;
-	
-	
-	 
-	 
-	
+		
  }
+ public int create(NoticeDTO noticeDTO) {
+	 int a=yellow.happen(noticeDTO);
+	 
+	 return a;
+	 
+ }
+
+}
  
  
-}  

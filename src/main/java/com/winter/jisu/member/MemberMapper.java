@@ -1,14 +1,17 @@
 package com.winter.jisu.member;
 
+import java.util.List;
+
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
-public interface MemberMapper {
+public interface MemberMapper {	
 	
-	public int join(MemberDTO memberDTO);
+	public MemberDTO login(MemberDTO memberDTO);
 	
-	public MemberDTO login(String id);
+	public int consider(MemberDTO memberDTO);
 	
-	public int update(MemberDTO memberDTO);
-
+	public List<MemberDTO> birth();
+	
+	
 }

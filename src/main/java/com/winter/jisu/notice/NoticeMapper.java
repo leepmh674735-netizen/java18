@@ -9,6 +9,8 @@ public interface NoticeMapper {
 	
 	public NoticeDTO detail(NoticeDTO notieDTO);
 	
+	public int happen(NoticeDTO noticeDTO);
+	
 	
 
 	public List<NoticeDTO> yellow(); 
